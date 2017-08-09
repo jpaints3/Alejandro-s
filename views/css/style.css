@@ -73,16 +73,15 @@ main {
 
 #praise5{
     position: relative;
-    bottom: 322px;
+    bottom: 282px;
 }
 
 #praise6{
     position: relative;
-    bottom: 234px;
+    bottom: 194px;
 }
 
 #igReviews{
-    background-color: lightblue;
     height: 200px;
     width: 286px;
     position: absolute;
@@ -94,7 +93,6 @@ main {
 }
 
 #snapReviews{
-    background-color: yellow;
     height: 200px;
     width: 286px;
     position: absolute;

@@ -12,23 +12,135 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav id="nav-mobile1">
                 <div class="nav-wrapper">
-                  <img src="cimg.png" id = logo>
-                  <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="sass.html">Sass</a></li>
-                    <li><a href="badges.html">Components</a></li>
-                    <li><a href="collapsible.html">JavaScript</a></li>
+                  <img src="images/cimg.png" id = "logo">
+                  <ul class="right hide-on-med-and-down terms">
+                    <li><a href="sass.html" id = "AboutUs">About Us</a></li>
+                    <li><a href="badges.html" id = "ContactUs">Contact Us</a></li>
+                    <li><a href="collapsible.html" id = "Help">Help</a></li>
                   </ul>
                 </div>
+            </nav>
+            <nav id="nav-mobile2" >
+                    <ul class="right hide-on-med-and-down bottom" id = "nav2-text">
+                    <li><a href="sass.html" id = "Sign Up">Sign Up</a></li>
+                    <li><a href="badges.html" id = "Login">Login</a></li>
+                    </ul>
             </nav>
         </header>
         
         <main>
+          <div class="carousel">
+            <a class="carousel-item" id ="1" href="#"><img src="images/images.jpeg"></a>
+            <a class="carousel-item" id ="2" href="#"><img src="images/IMG_0175.jpeg"></a>
+            <a class="carousel-item" id ="3" href="#"><img src="images/cimg.png"></a>
+            <a class="carousel-item" id ="4" href="#"><img src="images/community-service.jpg"></a>
+            <a class="carousel-item" id ="5" href="#"><img src="images/service-sign.jpg"></a>
+          </div>
+            
+            <ul>
+            <div class="container" id= searchbar>
+                <div class="row">
+                    <ln id= "searchbar2">
+                        <div class= "col s3 m3 l3">
+                            <p>Location: <input type="text" id="location" name="location" /></p>
+                        </div>
+                        <div class= "col s3 m3 l3">
+                            <p>Day: <input type="text" id="Day" name="Day" /></p>
+                        </div class= "col s3 m3 l3">
+                        <div class= "col s3 m3 l3">
+                            <p>Time: <input type="text" id="Time" name="Time" /></p>
+                        </div>
+                        <button class="btn" type="submit" id="searchsub">Find Service</button>
+                    </ln>
+                </div>
+            </div>
+            </ul>
+            
+            <div class="container">
+                <div class="row">
+                <div class= "favs">
+                  <div class="card medium col s4 m4 l4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/office.jpg">
+                    </div>
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                  </div>
+                  <div class= "favs">
+                  <div class="card medium col s4 m4 l4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/office.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="favs">
+                  <div class="card medium col s4 m4 l4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/office.jpg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#">This is a link</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                </div>
+            </div>
+            
+            <div id= "igReviews">
+                <img src="">
+            </div>
+            
+            <div id= "snapReviews">
+                <img src="2">
+            </div>
             
         </main>
         
         <footer>
-            
+            <nav id="nav-mobile3" >
+                    <ul class="right hide-on-med-and-down bottom" id = "nav2-text">
+                    <li><a href="sass.html" id = "Sign Up">Sign Up</a></li>
+                    <li><a href="badges.html" id = "Login">Login</a></li>
+                    </ul>
+            </nav>
+            <nav id="nav-mobile1">
+                <div class="nav-wrapper">
+                  <img src="images/cimg.png" id = "logo">
+                  <ul class="right hide-on-med-and-down terms">
+                    <li><a href="sass.html" id = "AboutUs">About Us</a></li>
+                    <li><a href="badges.html" id = "ContactUs">Contact Us</a></li>
+                    <li><a href="collapsible.html" id = "Help">Help</a></li>
+                  </ul>
+                </div>
+            </nav>
         </footer>
+        
+        <script>
+            $(document).ready(function(){
+                $('.carousel').carousel();
+            });
+        </script>
     </body>

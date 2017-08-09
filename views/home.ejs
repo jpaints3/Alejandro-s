@@ -9,13 +9,15 @@
           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
           <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
           <script src="https://www.gstatic.com/firebasejs/4.1.5/firebase.js"></script>
+          
+
     </head>
     <body>
         <header>
             <nav id="nav-mobile1">
                 <div class="nav-wrapper">
                   <img src="images/cimg.png" id = "logo">
-                  <ul class="right hide-on-med-and-down terms">
+                  <ul class="right hide-on-med-and-down" id ="terms">
                     <li><a href="sass.html" id = "AboutUs">About Us</a></li>
                     <li><a href="badges.html" id = "ContactUs">Contact Us</a></li>
                     <li><a href="collapsible.html" id = "Help">Help</a></li>
@@ -31,12 +33,12 @@
         </header>
         
         <main>
-          <div class="carousel">
-            <a class="carousel-item" id ="1" href="#"><img src="images/images.jpeg"></a>
-            <a class="carousel-item" id ="2" href="#"><img src="images/IMG_0175.jpeg"></a>
-            <a class="carousel-item" id ="3" href="#"><img src="images/cimg.png"></a>
-            <a class="carousel-item" id ="4" href="#"><img src="images/community-service.jpg"></a>
-            <a class="carousel-item" id ="5" href="#"><img src="images/service-sign.jpg"></a>
+          <div class="fotorama carousel" data-autoplay="true">
+            <a class="carousel-item" id ="1" href="#"><img src="images/IMG_0949.JPG"></a>
+            <a class="carousel-item" id ="2" href="#"><img src="images/Alejandro1.png"></a>
+            <a class="carousel-item" id ="3" href="#"><img src="images/Alejandro2.png"></a>
+            <a class="carousel-item" id ="4" href="#"><img src="images/Alejandro3.png"></a>
+            <a class="carousel-item" id ="5" href="#"><img src="images/Alejandro4.png"></a>
           </div>
             
             <ul>
@@ -57,71 +59,102 @@
                 </div>
             </div>
             </ul>
-            
             <div class="container">
                 <div class="row">
-                <div class= "favs">
-                  <div class="card medium col s4 m4 l4">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="images/office.jpg">
+                    <div class="col s4 m4 l4">
+                      <div class="card green lighten-3" id ="praise1">
+                        <div class="card-content white-text">
+                          <span class="card-title">Praise</span>
+                          <p>Thank you company SoAndSo for donating $100,000 to We Change! Company SoAndSo is a company that makes amazing headphones with top notch surround sound. We recommend you take a look at their website for more information.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="https://www.SoAndSo.com/">SoAndSo</a>
+                        </div>
+                      </div>
                     </div>
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
+                  <div class="col s4 m4 l4">
+                      <div class="card green lighten-3" id ="praise2">
+                        <div class="card-content white-text">
+                          <span class="card-title">Praise</span>
+                          <p>Thank you company This-AND-That for donating $200,000 to We Change! Company This-AND-That is a company that makes amazing phones with some of the best processors out there. This phone would go great with a new set of headphones from SoAndSo! We again recommend you take a look at their website for more information.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="https://www.This-AND-That.com/">This-AND-That</a>
+                        </div>
+                      </div>
                   </div>
-                  <div class= "favs">
-                  <div class="card medium col s4 m4 l4">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="images/office.jpg">
+                  <div class="col s4 m4 l4">
+                      <div class="card green lighten-3" id ="praise3">
+                        <div class="card-content white-text">
+                          <span class="card-title">Praise</span>
+                          <p>Thank you company 1234more for donating $120,345 to We Change! Company SoAndSo is a company that makes amazing graph paper with perfectly placed lines. We recommend you take a look at their website for more information.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="https://www.1234more.com/">1234more</a>
+                        </div>
+                      </div>
+                </div>
+                    <div class="col s4 m4 l4">
+                      <div class="card green lighten-3" id ="praise4">
+                        <div class="card-content white-text">
+                          <span class="card-title">Praise</span>
+                          <p>Thank you company Pi for donating $31,415.92 to We Change! Company Pi is a company that makes amazing headphones with the best pie in the market. We recommend you take a look at their website for more information.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="https://www.pi.com/">Pi</a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
+                    <div class="col s4 m4 l4">
+                      <div class="card green lighten-3" id ="praise5">
+                        <div class="card-content white-text">
+                          <span class="card-title">Praise</span>
+                          <p>Thank you company Quarter for donating $25,2525.25 to We Change! Company Quarter is a company that hosts a coin gallery with very unique quarters. We recommend you take a look at their website for more information.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="https://www.quarter.com/">Quarter</a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    <div class="col s4 m4 l4">
+                      <div class="card green lighten-3" id ="praise6">
+                        <div class="card-content white-text">
+                          <span class="card-title">Praise</span>
+                          <p>Thank you company Alejandro for donating $10 bucks to We Change! Company Alejandro is full of amazing people. We recommend you take a look at their website for more information.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="https://community-service.herokuapp.com/">Alejando's Web App</a>
+                        </div>
+                      </div>
                     </div>
-                    </div>
-                  </div>
-                  <div class="favs">
-                  <div class="card medium col s4 m4 l4">
-                    <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="images/office.jpg">
-                    </div>
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                      <p><a href="#">This is a link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
-                  </div>
                   </div>
                 </div>
-                </div>
-            </div>
-            
-            <div id= "igReviews">
-                <img src="">
-            </div>
-            
-            <div id= "snapReviews">
-                <img src="2">
-            </div>
+                
+                <p id= "igReviews">
+                    “Last year, I would get extremely angry when I couldn’t find opportunities to participate in. Thanks to WeChange, I look forward to volunteering during the school year.” - Jack, 15
+                </p>
+                
+                <p id= "snapReviews">
+                    “WeChange’s simplicity and customer-centric design are a welcome change to spending hours searching for organizations on sloppily-made and messy websites.” - Nick, 16
+                </p>
+                
+                <!--<div id = "motto">
+                <p class="motto">"COMPANIES NEED YOU TO HELP TODAY. Sign up to help companies in need of volunteers."</p>
+                </div>-->
+                
+                <script>
+                  window.onload = myFunction()
+
+                  function myFunction() {
+                      alert("Please make sure webpage is at least 1280x800 (fullscreen) for best viewing experience. Thank You :)");
+                    }  
+                </script>
             
         </main>
         
         <footer>
             <nav id="nav-mobile3" >
-                    <ul class="right hide-on-med-and-down bottom" id = "nav2-text">
+                    <ul class="right hide-on-med-and-down bottom" id = "nav3-text">
                     <li><a href="sass.html" id = "Sign Up">Sign Up</a></li>
                     <li><a href="badges.html" id = "Login">Login</a></li>
                     </ul>
@@ -129,7 +162,7 @@
             <nav id="nav-mobile1">
                 <div class="nav-wrapper">
                   <img src="images/cimg.png" id = "logo">
-                  <ul class="right hide-on-med-and-down terms">
+                  <ul class="right hide-on-med-and-down" id ="nav-mobile4-text">
                     <li><a href="sass.html" id = "AboutUs">About Us</a></li>
                     <li><a href="badges.html" id = "ContactUs">Contact Us</a></li>
                     <li><a href="collapsible.html" id = "Help">Help</a></li>
@@ -142,5 +175,11 @@
             $(document).ready(function(){
                 $('.carousel').carousel();
             });
+        </script>
+        <script>
+          $(document).ready(function(){
+          $('.carousel').carousel({dist:0});
+          window.setInterval(function(){$('.carousel').carousel('next')},3000)
+           });
         </script>
     </body>
